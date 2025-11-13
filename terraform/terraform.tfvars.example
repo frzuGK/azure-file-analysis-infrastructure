@@ -1,0 +1,13 @@
+# Copy this file to terraform.tfvars and customize
+
+location    = "westeurope"
+environment = "production"
+
+drop_container_name   = "binaries-drop"
+output_container_name = "analysis-results"
+queue_name            = "new-binary-events"
+
+openai_deployment_name = "gpt-mini"
+
+container_image_name = "re-analyzer"
+container_image_tag  = "1.0.0"
